@@ -36,3 +36,6 @@ jobs:
         with:
           deploy_key: ${{ secrets.SECRET_DEPLOY_KEY }}
           publish_dir: ./build
+      - name: List Directory
+        run: ls -R ./build
+
