@@ -18,9 +18,9 @@ Everyone who requested to be assigned a team or who didn't respond to the team s
 
 You *must* do the following correctly in your project:
 
-- [ ] Create a project with `package.json`
-- [ ] Ensure that `.idea`, `node_modules` and any other temporary file is ignored from Git and not committed
-- [ ] Set up build with `vite` as a GitHub Actions workflow
+- [x] Create a project with `package.json`
+- [x] Ensure that `.idea`, `node_modules` and any other temporary file is ignored from Git and not committed
+- [x] Set up build with `vite` as a GitHub Actions workflow
 - [ ] Include verification with Prettier and Typescript in the build process
 - [ ] Avoid pushing bad commits by adding a Husky git hook
 - [ ] Include a link to their deployed GitHub Pages site
