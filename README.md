@@ -5,7 +5,7 @@
 
 The goal of this assignment is to verify that you're able to deploy a working web application:
 
-- [ ] Set up the project correctly to deploy ~~React Vite + React-ts and OpenLayers with GitHub pages
+- [ ] Set up the project correctly to deploy ~~React~~ Vite + React-ts and OpenLayers with GitHub pages
 - [ ] Add and style vector layers to the map
 - [ ] Interact with the map using the pointer
 - [ ] Display map feature properties in React
