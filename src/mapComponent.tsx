@@ -6,7 +6,7 @@ import { OSM } from 'ol/source';
 
 const MapComponent: React.FC = () => {
 
-    //This is dumb.
+    //This is dumb. The whole point of component based development is for the components to be independent and avoid using the global DOM id space.
     useEffect(() => {
 
         let map = new Map({
