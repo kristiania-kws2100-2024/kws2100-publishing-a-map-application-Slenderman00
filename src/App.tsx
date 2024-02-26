@@ -5,7 +5,6 @@ function App() {
     <>
       skeet
       <MapComponent/>
-      <MapComponent/>
     </>
   )
 }
