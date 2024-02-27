@@ -18,13 +18,13 @@ const MapComponent: React.FC = () => {
   useEffect(() => {
     const vectorSourceDistricts = new VectorSource({
       format: new GeoJSON(),
-      url: "src/assets/Sivilforsvarsdistrikter.geojson",
+      url: "/kws2100-publishing-a-map-application-slenderman00/Sivilforsvarsdistrikter.json",
       wrapX: false,
     });
 
     const vectorSourcePoints = new VectorSource({
       format: new GeoJSON(),
-      url: "src/assets/Offentlige tilfluktsrom.geojson",
+      url: "/kws2100-publishing-a-map-application-slenderman00/Offentlige tilfluktsrom.geojson",
       wrapX: false,
     });
 
