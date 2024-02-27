@@ -124,7 +124,7 @@ const MapComponent: React.FC = () => {
         <div
           ref={overlayRef}
           className="overlay"
-          style={{ backgroundColor: "yellow", position: "static" }}
+          style={{ backgroundColor: "yellow"}}
         >
           <p>Address: {selectedFeature}</p>
         </div>
