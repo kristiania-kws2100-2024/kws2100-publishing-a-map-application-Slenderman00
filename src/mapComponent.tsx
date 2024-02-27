@@ -13,7 +13,7 @@ import { click, pointerMove } from "ol/events/condition";
 const MapComponent: React.FC = () => {
   const mapRef = useRef() as MutableRefObject<HTMLDivElement>;
   const overlayRef = useRef() as MutableRefObject<HTMLDivElement>;
-  const [selectedFeature, setSelectedFeature] = useState(null);
+  const [selectedFeature, setSelectedFeature] = useState({});
 
   useEffect(() => {
     const vectorSourceDistricts = new VectorSource({
@@ -82,7 +82,7 @@ const MapComponent: React.FC = () => {
       if (e.selected.length > 0) {
         let feature = e.selected[0];
         let properties = feature.getProperties();
-        setSelectedFeature(properties.adresse);
+        setSelectedFeature(properties);
         overlay.setPosition(e.mapBrowserEvent.coordinate);
       } else {
         overlay.setPosition(undefined);
@@ -126,7 +126,8 @@ const MapComponent: React.FC = () => {
           className="overlay"
           style={{ backgroundColor: "yellow"}}
         >
-          <p>Address: {selectedFeature}</p>
+          <p>Address: {selectedFeature.adresse}</p>
+          <p>Spots: {selectedFeature.plasser}</p>
         </div>
       )}
     </>
